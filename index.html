@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Clinica Médica Lejarraga</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1>Clinica Médica Lejarraga</h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Mis pacientes</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>Apellido</th>
+							<th>Peso(kg)</th>
+							<th>Altura(m)</th>
+							<th>Colesterol Total[mg/dL]</th>
+							<th>IMC</th>
+						</tr>
+					</thead>
+					<tbody id="tabla-pacientes">
+						<tr class="paciente">
+							<td class="info-nombre">Pablo</td>
+							<td class="info-apellido">Alvarez</td>
+							<td class="info-peso">100</td>
+							<td class="info-altura">2.00</td>
+							<td class="info-colesterol">160</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente" >
+							<td class="info-nombre">Juan</td>
+							<td class="info-apellido">Giussiani</td>
+							<td class="info-peso">80</td>
+							<td class="info-altura">1.72</td>
+							<td class="info-colesterol">315</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente" >
+							<td class="info-nombre">Erica</td>
+							<td class="info-apellido">Martinez</td>
+							<td class="info-peso">54</td>
+							<td class="info-altura">1.64</td>
+							<td class="info-colesterol">143</td>
+							<td class="info-imc">0</td>
+						</tr>
+
+						<tr class="paciente">
+							<td class="info-nombre">Diego</td>
+							<td class="info-apellido">Sockasky</td>
+							<td class="info-peso">85</td>
+							<td class="info-altura">1.73</td>
+							<td class="info-colesterol">249</td>
+							<td class="info-imc">0</td>
+						</tr>
+						<tr class="paciente" >
+							<td class="info-nombre">María</td>
+							<td class="info-apellido">Rosales</td>
+							<td class="info-peso">46</td>
+							<td class="info-altura">1.55</td>
+							<td class="info-colesterol">198</td>
+							<td class="info-imc">0</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</section>
+		</main>
+		<section class="container">
+			<h2 id="titulo-form">Agregar nuevo paciente</h2>
+			<form id="formulario-adicionar">
+				<div class="grupo">
+					<label for="nombre">Nombre:</label>
+					<input id="nombre" name="nombre" type="text" placeholder="digite el nombre del paciente" class="campo">
+				</div>
+				<div class="grupo">
+					<label for="apellido">Apellido:</label>
+					<input id="apellido" name="apellido" type="text" placeholder="digite el apellido del paciente" class="campo">
+				</div>
+				<div class="grupo">
+					<label for="peso">Peso:</label>
+					<input id="peso" name="peso" type="text" placeholder="digite el peso del paciente" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="altura">Altura:</label>
+					<input id="altura" name="altura" type="text" placeholder="digite la altura del paciente" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="colesterol">Colesterol Total:</label>
+					<input id="colesterol" type="text" placeholder="digite el colesterol total del paciente" class="campo campo-medio">
+				</div>
+				<button id="adicionar-paciente" class="boton bto-principal">Agregar</button>
+			</form>
+		</section>
+		<script src ="js/calcular-imc.js"></script>
+		<script src="js/form.js"></script>
+
+	</body>
+</html>
