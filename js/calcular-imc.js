@@ -13,15 +13,15 @@ for (let i = 0; i < pacientes.length; i++) {
 
     var tdImc = paciente.querySelector(".info-imc");
 
-    pesoEsValido = true;
-    alturaEsValida = true;
-    if (peso <= 0 || peso > 500) {
+    pesoEsValido = validarPeso(peso);
+    alturaEsValida = validarAltura(altura);
+    if (!pesoEsValido) {
         console.log("El Peso ingresado es INCORRECTO");
         tdImc.textContent = "Peso Incorrecto";
         pesoEsValido = false;
         paciente.classList.add("paciente-incorrecto"); // Adiciono la clase paciente-incorrecto al objeto paciente, para poder cambiarle el color desde el CSS.
     }
-    if (altura <= 0 || altura > 3.00) {
+    if (!alturaEsValida) {
         console.log("El Altura ingresado es INCORRECTA");
         tdImc.textContent = "Altura Incorrecta";
         alturaEsValida = false;
@@ -37,5 +37,18 @@ function calcularIMC(peso,altura){
     return imc.toFixed(2)   //el to.fixed(2) ,me pone 2 decimales
 }
 
-
+function validarPeso(peso){
+    if (peso >= 0 && peso < 700){
+        return true;
+    }else{
+        return false;
+    }
+}
+function validarAltura(altura){
+    if (altura > 0 && altura < 3.00){
+        return true;
+    }else{
+        return false;
+    }
+}
 
