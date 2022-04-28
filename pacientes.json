@@ -1,0 +1,58 @@
+[
+    {
+        "nombre": "Jéssica",
+        "apellido": "Martinez",
+        "peso": 47,
+        "altura": 1.54,
+        "colesterol": 132,
+        "imc": 19.82
+    },
+    {
+        "nombre": "Fabio",
+        "apellido": "Aranda",
+        "peso": 70,
+        "altura": 1.7,
+        "colesterol": 179,
+        "imc": 24.22
+    },
+    {
+        "nombre": "Teresa",
+        "apellido": "Lezcano",
+        "peso": 60,
+        "altura": 1.7,
+        "colesterol": 234,
+        "imc": 20.76
+    },
+    {
+        "nombre": "Marina",
+        "apellido": "Buckle",
+        "peso": 75,
+        "altura": 1.7,
+        "colesterol": 265,
+        "imc": 25.95
+    },
+    {
+        "nombre": "Lucas",
+        "apellido": "Soler",
+        "peso": 23,
+        "altura": 1.25,
+        "colesterol": 170,
+        "imc": 14.72
+    },
+    {
+        "nombre": "Erick",
+        "apellido": "Gambetta",
+        "peso": 73,
+        "altura": 1.75,
+        "colesterol": 120,
+        "imc": 23.84
+    },
+    {
+        "nombre": "Daniel",
+        "apellido": "Feimman",
+        "peso": 78,
+        "altura": 1.85,
+        "colesterol": 195,
+        "imc": 22.79
+    }
+]
