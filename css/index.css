@@ -138,4 +138,19 @@ button[disabled=disabled], button:disabled {
 }
 #mensajes-errores{
 	color:red;
+<<<<<<< HEAD
+}
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+#filtrar-tabla{
+	width: 200px;
+	height: 35px;
+	margin-bottom: 10px;
+}
+.invisible{
+	display: none;
+=======
+>>>>>>> 601fc98a4a1ed1746750bd644dc67b56fdcb21e0
 }
